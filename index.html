@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=*, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>Document</title>
+</head>
+<body>
+   <nav>
+
+    <ul class="sidebar">
+      <li onclick="hidesidebar()"><a href=""><i class="bi bi-x-square"></i></a></li>
+      <li><a href="">blog</a></li> 
+       <li><a href="">products</a></li>
+       <li><a href="">about</a></li>
+       <li><a href="">forum</a></li>
+       <li><a href="">login</a></li>
+
+    </ul>
+
+  <nav>
+  <ul>
+    <li><a href="">CODING2GO</a></li>
+    <li><a href="">blog</a></li>
+    <li><a href="">products</a></li>
+    <li><a href="">about</a></li>
+    <li><a href="">forum</a></li>
+    <li><a href="">login</a></li>
+    <li><button onclick="showsidebar()"><i class="bi bi-menu-down"></i></button></li>
+  </ul>
+</nav>
+
+<div class="sidebar">
+  <!-- محتوى الشريط الجانبي -->
+</div>
+
+<script>
+  function showsidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.transform = 'translateX(0)';
+    
+  }
+
+  function hidesidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.transform = 'translateX(-251px)';
+  }
+</script>
+
+</body>
+</html>
